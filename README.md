@@ -3,11 +3,9 @@ Se completó hasta cierto punto (me falto agregar insertar preguntas desde setti
 El proyecto es un juego multi nivel de preguntas con diferentes categorias, 
 cada respuesta correcta aumenta el nivel de dificultad.
 --------------------------------------------------------------------------------------------------------
-El programa se ejecuta desde la clase controller-start, para la base de datos se crea una base de datos
-con el nombre answerandquestions en MySql y se importan las tablas de la carpeta data.
-El backup se encuentra en SofkaChallenge\src\main\resources\data
+Para ejecutar el juego debes importart la base de datos que está en SofkaChallenge\src\main\resources\data
+y ejecutarla clase controllers/Start.
 --------------------------------------------------------------------------------------------------------
-Se utiliza java como lenguaje de desarrollo y unas de las principales librerias swing para la construncción
-el modelo vista.
------------------------------------------------------------------------------------------
+Se utiliza Java como lenguaje de desarrollo y la clase Swing para la construcción de interfaces. 
+--------------------------------------------------------------------------------------------------------
 
