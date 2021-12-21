@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.sofka.challenge.answerandquestions'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+sourceSets.main.resources.srcDirs = ["src/main/resources", "src/main/resources/images"]
+sourceSets.main.resources.includes = ["**.png", "**.jpg", "**.gif", "**.properties"]
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation "mysql:mysql-connector-java:8.0.16"
+}
+
+test {
+    useJUnitPlatform()
+}
